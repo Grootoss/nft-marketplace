@@ -1,0 +1,37 @@
+.categories {
+  width: 315px;
+  padding: 40px 30px;
+}
+
+.heading {
+  font: inherit;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.item {
+  width: 148px;
+  height: 209px;
+  border-radius: 20px;
+  background-color: #3b3b3b;
+}
+
+.body {
+  display: flex;
+  align-items: center;
+  height: 67px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.title {
+  font: inherit;
+  color: #ffffff;
+}

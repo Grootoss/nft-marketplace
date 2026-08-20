@@ -1,0 +1,59 @@
+.works {
+  padding: 40px 30px;
+  max-width: 315px;
+}
+
+.heading {
+  margin: 0 0 10px;
+  font: inherit;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.text {
+  margin: 0 0 40px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #3b3b3b;
+}
+
+.iconWrap {
+  flex-shrink: 0;
+  width: 84px;
+  height: 84px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.icon {
+  width: 130px;
+  height: 130px;
+  max-width: none;
+  margin: -23px;
+}
+
+.title {
+  margin: 0 0 10px;
+  font: inherit;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.description {
+  margin: 0;
+  font-size: 12px;
+  line-height: 140%;
+}

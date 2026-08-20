@@ -1,0 +1,80 @@
+.section {
+  padding: 40px 30px;
+  color: #ffffff;
+}
+
+.heading {
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: inherit;
+  font-size: 28px;
+  line-height: 140%;
+  font-weight: 600;
+}
+
+.text {
+  margin: 0;
+  margin-bottom: 40px;
+  font: inherit;
+}
+
+.card {
+  max-width: 315px;
+  margin-bottom: 40px;
+  background-color: #3b3b3b;
+  border-radius: 20px;
+}
+
+.body {
+  padding: 22px 20px;
+}
+
+.title {
+  margin: 0;
+  margin-bottom: 10px;
+  font: inherit;
+  font-size: 22px;
+}
+
+.author {
+  display: flex;
+  gap: 12px;
+}
+
+.started {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 315px;
+  height: 60px;
+  color: #ffffff;
+  background-color: #a259ff;
+  text-decoration: none;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+.list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  column-gap: 30px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  width: 85px;
+}
+
+.value {
+  font-family: 'Space Mono', 'Arial', sans-serif;
+  font-size: 20px;
+  line-height: 160%;
+}
+
+.label {
+  font-family: inherit;
+}

@@ -1,0 +1,95 @@
+.others {
+  padding: 40px 30px;
+}
+
+.heading {
+  font: inherit;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.text {
+  font: inherit;
+  margin-bottom: 40px;
+}
+
+.list {
+  margin-bottom: 40px;
+  max-width: 315px;
+}
+
+.item {
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.body {
+  height: 164px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #3b3b3b;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.work {
+  font: inherit;
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.author {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font: inherit;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+
+.prices {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price,
+.bid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  font-family: 'Space Mono', Arial, sans-serif;
+}
+
+.bid {
+  text-align: right;
+}
+
+.label {
+  color: #858584;
+  font-size: 12px;
+}
+
+.value {
+  color: #fff;
+  font-size: 16px;
+}
+
+.button {
+  width: 315px;
+  height: 60px;
+  margin-bottom: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background-color: transparent;
+  border: 2px solid #a259ff;
+  border-radius: 20px;
+  color: #ffffff;
+  font: inherit;
+  font-weight: inherit;
+}

@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+}
+
+.burgerMenu {
+  display: block;
+  background: transparent;
+  border: none;
+  appearance: none;
+  cursor: pointer;
+}

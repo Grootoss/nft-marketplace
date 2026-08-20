@@ -1,0 +1,100 @@
+.highlight {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 315px;
+  min-height: 590px;
+  padding: 40px 30px;
+  background:
+    linear-gradient(180deg, transparent 0%, rgba(162, 89, 255, 0.55) 100%),
+    url('/images/mashroom-mobile.jpg') center / cover no-repeat;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  gap: 12px;
+  margin-bottom: 12px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #3b3b3b;
+  color: #fff;
+}
+
+.author img {
+  border-radius: 50%;
+}
+
+.heading {
+  margin: 0 0 30px;
+  font: inherit;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.timer {
+  margin-bottom: 30px;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: rgb(59 59 59 / 50%);
+  backdrop-filter: blur(10px);
+}
+
+.timerLabel {
+  margin: 0 0 10px;
+  font-family: 'Space Mono', Arial, sans-serif;
+  font-size: 12px;
+  line-height: 110%;
+}
+
+.clock {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.unit {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 0;
+}
+
+.digits {
+  font-family: 'Space Mono', Arial, sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.caption {
+  font-family: 'Space Mono', Arial, sans-serif;
+  font-size: 12px;
+}
+
+.colon {
+  font-family: 'Space Mono', Arial, sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  height: 60px;
+  border-radius: 20px;
+  background-color: #fff;
+  color: #2b2b2b;
+  font: inherit;
+  font-weight: 600;
+}
+
+.button img {
+  display: block;
+}
