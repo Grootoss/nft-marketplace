@@ -98,3 +98,73 @@
 .button img {
   display: block;
 }
+@media (min-width: 834px) {
+  .highlight {
+    display: grid;
+    grid-template-columns: 1fr 295px;
+    grid-template-areas:
+      'author .'
+      'heading timer'
+      'button timer';
+    align-content: end;
+    align-items: start;
+    column-gap: 30px;
+    row-gap: 30px;
+    width: auto;
+    min-height: 640px;
+    padding: 80px 72px;
+    background:
+      linear-gradient(180deg, transparent 20%, rgba(162, 89, 255, 0.55) 100%),
+      url('/images/mashroom-mobile.jpg') center / cover no-repeat;
+  }
+
+  .author {
+    grid-area: author;
+    justify-self: start;
+    width: max-content;
+    margin-bottom: 0;
+  }
+
+  .heading {
+    grid-area: heading;
+    margin: 0;
+    font-size: 38px;
+    line-height: 140%;
+  }
+
+  .timer {
+    grid-area: timer;
+    align-self: center;
+    width: 295px;
+    margin-bottom: 0;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+
+  .button {
+    grid-area: button;
+    justify-self: start;
+    width: auto;
+    min-width: 198px;
+    color: #a259ff;
+  }
+}
+
+@media (min-width: 1280px) {
+  .highlight {
+    min-height: 640px;
+    padding: 80px 115px;
+    background:
+      linear-gradient(180deg, transparent 20%, rgba(162, 89, 255, 0.55) 100%),
+      url('/images/mashroom-desktop.jpg') center / cover no-repeat;
+  }
+
+  .heading {
+    font-size: 51px;
+    line-height: 110%;
+  }
+
+  .timer {
+    align-self: end;
+  }
+}

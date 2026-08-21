@@ -1,28 +1,26 @@
-import Header from './components/Header/Header';
-import Promo from './components/Promo/Promo';
-import Trending from './components/Trending/Trending';
-import Creator from './components/Creator/Creator';
-import Categories from './components/Catogories/Categories';
-import Others from './components/Others/Others';
-import Highlight from './components/Highlight/Highlight';
-import Works from './components/Works/Works';
-import Subscribe from './components/Subscribe/Subscribe';
-import Footer from './components/Footer/Footer';
+import { Routes, Route } from 'react-router-dom';
+import Layout from './layout/Layout';
+import Home from './pages/Home';
+import Marketplace from './pages/Marketplace';
+import Rankings from './pages/Rankings';
+import Wallet from './pages/Wallet';
+import Signup from './pages/Signup';
+import Artist from './pages/Artist';
+import Nft from './pages/Nft';
 
 function App() {
   return (
-    <>
-      <Header />
-      <Promo />
-      <Trending />
-      <Creator />
-      <Categories />
-      <Others />
-      <Highlight />
-      <Works />
-      <Subscribe />
-      <Footer />
-    </>
+    <Routes>
+      <Route element={<Layout />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/marketplace" element={<Marketplace />} />
+        <Route path="/rankings" element={<Rankings />} />
+        <Route path="/wallet" element={<Wallet />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/artist/:id" element={<Artist />} />
+        <Route path="/nft/:id" element={<Nft />} />
+      </Route>
+    </Routes>
   );
 }
 

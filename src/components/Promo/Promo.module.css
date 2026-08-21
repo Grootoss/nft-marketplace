@@ -78,3 +78,95 @@
 .label {
   font-family: inherit;
 }
+.cover {
+  display: block;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+@media (min-width: 834px) {
+  .section {
+    display: grid;
+    grid-template-columns: 1fr 330px;
+    grid-template-areas:
+      'heading card'
+      'text card'
+      'started card'
+      'list card';
+    column-gap: 30px;
+    align-items: start;
+    padding: 80px 72px;
+  }
+
+  .heading {
+    grid-area: heading;
+    font-size: 38px;
+    line-height: 140%;
+    margin-bottom: 20px;
+  }
+
+  .text {
+    grid-area: text;
+    margin-bottom: 30px;
+  }
+
+  .card {
+    grid-area: card;
+    max-width: none;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .started {
+    width: 224px;
+    grid-area: started;
+    margin-bottom: 30px;
+  }
+
+  .list {
+    grid-area: list;
+  }
+
+  .value {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .section {
+    grid-template-columns: 1fr 1fr;
+    padding: 80px 115px;
+  }
+
+  .heading {
+    font-size: 67px;
+    line-height: 110%;
+    margin-bottom: 20px;
+  }
+
+  .text {
+    font-size: 22px;
+    line-height: 160%;
+    margin-bottom: 30px;
+  }
+
+  .item {
+    width: auto;
+    flex: 1;
+  }
+
+  .value {
+    font-size: 28px;
+    line-height: 140%;
+    font-weight: 700;
+  }
+
+  .label {
+    font-size: 24px;
+    line-height: 160%;
+  }
+
+  .cover {
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+  }
+}

@@ -4,9 +4,11 @@ import { creators } from '../../data/creators';
 function Creator() {
   return (
     <section className={styles.creator}>
-      <h2 className={styles.heading}>Top creators</h2>
+      <h2 className={styles.heading}>Top Creators</h2>
       <p className={styles.text}>
-        Checkout Top Rated Creators on the NFT Marketplace
+        Checkout Top Rated Creators On The NFT
+        <br />
+        Marketplace
       </p>
       <ul className={styles.list}>
         {creators.map((creator) => (

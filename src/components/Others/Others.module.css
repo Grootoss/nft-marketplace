@@ -5,6 +5,7 @@
 .heading {
   font: inherit;
   font-size: 28px;
+  line-height: 140%;
   font-weight: 600;
   margin-bottom: 10px;
 }
@@ -22,10 +23,17 @@
 .item {
   border-radius: 20px;
   margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.item a > img {
+  display: block;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
 }
 
 .body {
-  height: 164px;
+  height: auto;
   padding: 20px;
   box-sizing: border-box;
   background-color: #3b3b3b;
@@ -48,6 +56,14 @@
   font: inherit;
   color: #ffffff;
   margin-bottom: 25px;
+}
+
+.author img {
+  width: 24px;
+  height: 24px;
+  max-width: 24px;
+  border-radius: 50%;
+  flex-shrink: 0;
 }
 
 .prices {
@@ -91,5 +107,81 @@
   border-radius: 20px;
   color: #ffffff;
   font: inherit;
-  font-weight: inherit;
+  font-weight: 600;
+}
+
+@media (min-width: 834px) {
+  .others {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      'heading button'
+      'text button'
+      'list list';
+    align-items: end;
+    padding: 80px 72px;
+    column-gap: 30px;
+  }
+
+  .heading {
+    grid-area: heading;
+    margin-bottom: 10px;
+    font-size: 28px;
+    line-height: 140%;
+  }
+
+  .text {
+    grid-area: text;
+    margin-bottom: 40px;
+  }
+
+  .button {
+    grid-area: button;
+    width: auto;
+    min-width: 187px;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+  }
+
+  .list {
+    grid-area: list;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    width: 100%;
+    max-width: none;
+    margin-bottom: 0;
+  }
+
+  .item {
+    margin-bottom: 0;
+  }
+
+  .item:nth-child(n + 3) {
+    display: none;
+  }
+}
+
+@media (min-width: 1280px) {
+  .others {
+    padding: 80px 115px;
+  }
+
+  .heading {
+    font-size: 38px;
+    line-height: 140%;
+  }
+
+  .text {
+    font-size: 22px;
+    line-height: 160%;
+  }
+
+  .list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .item:nth-child(n + 3) {
+    display: block;
+  }
 }

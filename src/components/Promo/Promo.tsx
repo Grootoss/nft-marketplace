@@ -3,17 +3,27 @@ import styles from './Promo.module.css';
 function Promo() {
   return (
     <section className={styles.section}>
-      <h2 className={styles.heading}>Discover digital Art & Collect NFTs</h2>
+      <h2 className={styles.heading}>
+        Discover
+        <br />
+        Digital Art & Collect NFTs
+      </h2>
       <p className={styles.text}>
-        NFT marketplace UI created with Anima for Figma. Collect, buy and sell
-        art from more than 20k NFT artists.
+        NFT Marketplace UI Created With Anima For Figma. Collect, Buy And Sell
+        Art From More Than 20k NFT Artists.
       </p>
       <article className={styles.card}>
-        <img
-          className={styles.cover}
-          src="/images/promo-cover-mobile.jpg"
-          alt=""
-        />
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcSet="/images/promo-cover-desktop.jpg"
+          />
+          <img
+            className={styles.cover}
+            src="/images/promo-cover-mobile.jpg"
+            alt=""
+          />
+        </picture>
         <div className={styles.body}>
           <h3 className={styles.title}>Space Walking</h3>
           <p className={styles.author}>

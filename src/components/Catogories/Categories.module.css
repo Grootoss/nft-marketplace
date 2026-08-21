@@ -35,3 +35,55 @@
   font: inherit;
   color: #ffffff;
 }
+
+.item img {
+  display: block;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+@media (min-width: 834px) {
+  .heading {
+    margin-bottom: 60px;
+  }
+
+  .categories {
+    width: auto;
+    padding: 80px 72px;
+  }
+
+  .list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+
+  .item {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 1280px) {
+  .categories {
+    padding: 80px 115px;
+  }
+
+  .heading {
+    font-size: 38px;
+    line-height: 140%;
+    margin-bottom: 60px;
+  }
+
+  .body {
+    height: auto;
+    padding: 20px 30px 25px;
+  }
+
+  .title {
+    font-size: 22px;
+    line-height: 140%;
+    font-weight: 600;
+  }
+}
