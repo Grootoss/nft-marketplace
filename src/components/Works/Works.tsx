@@ -1,5 +1,6 @@
 import styles from './Works.module.css';
 import { works } from '../../data/works';
+import { asset } from '../../utils/asset';
 
 function Works() {
   return (
@@ -10,7 +11,7 @@ function Works() {
         {works.map((work) => (
           <li key={work.src} className={styles.item}>
             <div className={styles.iconWrap}>
-              <img className={styles.icon} src={`/images/${work.src}`} alt="" />
+              <img className={styles.icon} src={asset(`/images/${work.src}`)} alt="" />
             </div>
             <div>
               <h3 className={styles.title}>{work.title}</h3>

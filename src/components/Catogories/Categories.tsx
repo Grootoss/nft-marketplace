@@ -1,5 +1,6 @@
 import styles from './Categories.module.css';
 import { categories } from '../../data/categories';
+import { asset } from '../../utils/asset';
 
 function Categories() {
   return (
@@ -9,7 +10,7 @@ function Categories() {
         {categories.map((category) => (
           <li key={category.src} className={styles.item}>
             <a href="#">
-              <img src={`/images/categories/${category.src}`} alt="" />
+              <img src={asset(`/images/categories/${category.src}`)} alt="" />
               <div className={styles.body}>
                 <h3 className={styles.title}>{category.title}</h3>
               </div>

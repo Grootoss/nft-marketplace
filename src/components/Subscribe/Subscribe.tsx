@@ -1,4 +1,5 @@
 import styles from './Subscribe.module.css';
+import { asset } from '../../utils/asset';
 
 function Subscribe() {
   return (
@@ -6,7 +7,7 @@ function Subscribe() {
       <article className={styles.card}>
         <img
           className={styles.cover}
-          src="/images/spaceman-mobile.jpg"
+          src={asset('/images/spaceman-mobile.jpg')}
           width={315}
           height={255}
           alt=""
@@ -27,7 +28,7 @@ function Subscribe() {
               placeholder="Enter Your Email Address"
             />
             <button className={styles.button} type="submit">
-              <img src="/images/envelope.svg" width={20} height={20} alt="" />
+              <img src={asset('/images/envelope.svg')} width={20} height={20} alt="" />
               Subscribe
             </button>
           </form>

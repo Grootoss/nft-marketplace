@@ -12,7 +12,9 @@
     "lint:styles": "stylelint \"**/*.{css,scss}\"",
     "lint:styles:fix": "stylelint \"**/*.{css,scss}\" --fix",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^19.2.8",
@@ -29,6 +31,7 @@
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.3",
+    "gh-pages": "^6.3.0",
     "globals": "^17.7.0",
     "prettier": "^3.9.6",
     "stylelint": "^17.14.1",

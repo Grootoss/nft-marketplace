@@ -1,5 +1,6 @@
 import styles from './Others.module.css';
 import { others } from '../../data/others';
+import { asset } from '../../utils/asset';
 
 function Others() {
   return (
@@ -11,11 +12,11 @@ function Others() {
         {others.map((item) => (
           <li key={item.src} className={styles.item}>
             <a href="#">
-              <img src={`/images/others/${item.src}`} alt={item.title} />
+              <img src={asset(`/images/others/${item.src}`)} alt={item.title} />
               <div className={styles.body}>
                 <p className={styles.work}>{item.title}</p>
                 <p className={styles.author}>
-                  <img src={`/images/ava/${item.avatar}`} alt="" />
+                  <img src={asset(`/images/ava/${item.avatar}`)} alt="" />
                   {item.author}
                 </p>
                 <div className={styles.prices}>
@@ -34,7 +35,7 @@ function Others() {
         ))}
       </ul>
       <a href="#" className={styles.button}>
-        <img src="/images/eye.svg" width={20} height={20} />{' '}
+        <img src={asset('/images/eye.svg')} width={20} height={20} />{' '}
         <span>See All</span>
       </a>
     </section>

@@ -1,4 +1,5 @@
 import styles from './Footer.module.css';
+import { asset } from '../../utils/asset';
 
 const socials = [
   { src: 'discord.svg', alt: 'Discord' },
@@ -11,7 +12,7 @@ function Footer() {
   return (
     <footer className={styles.footer}>
       <a href="/" className={styles.logo}>
-        <img src="/images/logo-mobile.svg" alt="NFT Marketplace" />
+        <img src={asset('/images/logo-mobile.svg')} alt="NFT Marketplace" />
       </a>
       <p className={styles.text}>
         NFT marketplace UI created with Anima for Figma.
@@ -22,7 +23,7 @@ function Footer() {
           <li key={social.src}>
             <a href="#">
               <img
-                src={`/images/social/${social.src}`}
+                src={asset(`/images/social/${social.src}`)}
                 width={32}
                 height={32}
                 alt={social.alt}
@@ -60,7 +61,7 @@ function Footer() {
           placeholder="Enter Your Email Address"
         />
         <button className={styles.button} type="submit">
-          <img src="/images/envelope.svg" width={20} height={20} alt="" />
+          <img src={asset('/images/envelope.svg')} width={20} height={20} alt="" />
           Subscribe
         </button>
       </form>

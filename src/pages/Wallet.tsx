@@ -1,5 +1,2 @@
-function Wallet() {
-  return <h1>Wallet</h1>;
-}
-
+import Wallet from '../components/Wallet/Wallet';
 export default Wallet;

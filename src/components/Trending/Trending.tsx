@@ -1,5 +1,6 @@
 import styles from './Trending.module.css';
 import { collections } from '../../data/trendings';
+import { asset } from '../../utils/asset';
 
 function Trending() {
   return (
@@ -17,7 +18,7 @@ function Trending() {
                 <a href="#">
                   <img
                     className={styles.cover}
-                    src={`/images/trending/${item.cover}`}
+                    src={asset(`/images/trending/${item.cover}`)}
                     alt=""
                   />
                 </a>
@@ -27,7 +28,7 @@ function Trending() {
                   <a href="#">
                     <img
                       className={styles.thumb}
-                      src={`/images/trending/${src}`}
+                      src={asset(`/images/trending/${src}`)}
                       alt=""
                     />
                   </a>
@@ -42,7 +43,7 @@ function Trending() {
             <p className={styles.category}>{item.title}</p>
             <p className={styles.author}>
               <img
-                src={`/images/ava/${item.avatar}`}
+                src={asset(`/images/ava/${item.avatar}`)}
                 width={24}
                 height={24}
                 alt=""

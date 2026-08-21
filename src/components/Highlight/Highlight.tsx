@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import styles from './Highlight.module.css';
+import { asset } from '../../utils/asset';
 
 const AUCTION_END =
   Date.now() + 59 * 60 * 60 * 1000 + 59 * 60 * 1000 + 59 * 1000;
@@ -33,7 +34,7 @@ function Highlight() {
   return (
     <section className={styles.highlight}>
       <a href="#" className={styles.author}>
-        <img src="/images/ava/shroomie-ava.svg" width={24} height={24} alt="" />
+        <img src={asset('/images/ava/shroomie-ava.svg')} width={24} height={24} alt="" />
         <span>Shroomie</span>
       </a>
 
@@ -60,7 +61,7 @@ function Highlight() {
       </div>
 
       <a href="#" className={styles.button}>
-        <img src="/images/eye.svg" width={20} height={20} alt="" />
+        <img src={asset('/images/eye.svg')} width={20} height={20} alt="" />
         See NFT
       </a>
     </section>

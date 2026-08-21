@@ -7,7 +7,7 @@
   padding: 40px 30px;
   background:
     linear-gradient(180deg, transparent 0%, rgba(162, 89, 255, 0.55) 100%),
-    url('/images/mashroom-mobile.jpg') center / cover no-repeat;
+    url('/nft-marketplace/images/mashroom-mobile.jpg') center / cover no-repeat;
 }
 
 .author {
@@ -115,7 +115,7 @@
     padding: 80px 72px;
     background:
       linear-gradient(180deg, transparent 20%, rgba(162, 89, 255, 0.55) 100%),
-      url('/images/mashroom-mobile.jpg') center / cover no-repeat;
+      url('/nft-marketplace/images/mashroom-mobile.jpg') center / cover no-repeat;
   }
 
   .author {
@@ -156,7 +156,7 @@
     padding: 80px 115px;
     background:
       linear-gradient(180deg, transparent 20%, rgba(162, 89, 255, 0.55) 100%),
-      url('/images/mashroom-desktop.jpg') center / cover no-repeat;
+      url('/nft-marketplace/images/mashroom-desktop.jpg') center / cover no-repeat;
   }
 
   .heading {

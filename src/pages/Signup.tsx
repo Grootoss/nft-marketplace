@@ -1,5 +1,2 @@
-function Signup() {
-  return <h1>Signup</h1>;
-}
-
+import Signup from '../components/Signup/Signup';
 export default Signup;

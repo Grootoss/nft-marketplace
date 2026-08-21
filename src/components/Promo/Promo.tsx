@@ -1,4 +1,5 @@
 import styles from './Promo.module.css';
+import { asset } from '../../utils/asset';
 
 function Promo() {
   return (
@@ -16,11 +17,11 @@ function Promo() {
         <picture>
           <source
             media="(min-width: 1280px)"
-            srcSet="/images/promo-cover-desktop.jpg"
+            srcSet={asset('/images/promo-cover-desktop.jpg')}
           />
           <img
             className={styles.cover}
-            src="/images/promo-cover-mobile.jpg"
+            src={asset('/images/promo-cover-mobile.jpg')}
             alt=""
           />
         </picture>
@@ -28,7 +29,7 @@ function Promo() {
           <h3 className={styles.title}>Space Walking</h3>
           <p className={styles.author}>
             <img
-              src="/images/ava/animakid-ava.svg"
+              src={asset('/images/ava/animakid-ava.svg')}
               width="24"
               height="24px"
               alt=""
@@ -40,7 +41,7 @@ function Promo() {
 
       <a href="#" className={styles.started}>
         <img
-          src="/images/rocket.svg"
+          src={asset('/images/rocket.svg')}
           width="20"
           height="20"
           alt="Decor icon Rocket"

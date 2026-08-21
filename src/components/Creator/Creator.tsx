@@ -1,5 +1,6 @@
 import styles from './Creator.module.css';
 import { creators } from '../../data/creators';
+import { asset } from '../../utils/asset';
 
 function Creator() {
   return (
@@ -15,7 +16,7 @@ function Creator() {
           <li className={styles.item} key={creator.alt}>
             <a href="#" className={styles.link}>
               <img
-                src={`/images/creators/${creator.src}`}
+                src={asset(`/images/creators/${creator.src}`)}
                 width={60}
                 height={60}
                 alt={creator.alt}
@@ -33,7 +34,7 @@ function Creator() {
       </ul>
       <a href="#" className={styles.button}>
         <img
-          src="/images/rocket.svg"
+          src={asset('/images/rocket.svg')}
           width="20"
           height="20"
           alt="Decor rocket."
