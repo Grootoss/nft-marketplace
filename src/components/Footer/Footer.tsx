@@ -37,13 +37,13 @@ function Footer() {
       <h2 className={styles.heading}>Explore</h2>
       <ul className={styles.links}>
         <li>
-          <a href="#">Marketplace</a>
+          <Link to="/marketplace">Marketplace</Link>
         </li>
         <li>
-          <a href="#">Rankings</a>
+          <Link to="/rankings">Rankings</Link>
         </li>
         <li>
-          <a href="#">Connect a wallet</a>
+          <Link to="/wallet">Connect a wallet</Link>
         </li>
       </ul>
 
