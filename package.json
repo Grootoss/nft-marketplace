@@ -13,7 +13,7 @@
     "lint:styles:fix": "stylelint \"**/*.{css,scss}\" --fix",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && node scripts/copy-404.js",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {

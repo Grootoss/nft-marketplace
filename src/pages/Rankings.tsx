@@ -1,5 +1,2 @@
-function Rankings() {
-  return <h1>Rankings</h1>;
-}
-
+import Rankings from '../components/Rankings/Rankings';
 export default Rankings;

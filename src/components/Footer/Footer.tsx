@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styles from './Footer.module.css';
 import { asset } from '../../utils/asset';
 
@@ -11,9 +12,9 @@ const socials = [
 function Footer() {
   return (
     <footer className={styles.footer}>
-      <a href="/" className={styles.logo}>
+      <Link to="/" className={styles.logo}>
         <img src={asset('/images/logo-mobile.svg')} alt="NFT Marketplace" />
-      </a>
+      </Link>
       <p className={styles.text}>
         NFT marketplace UI created with Anima for Figma.
       </p>

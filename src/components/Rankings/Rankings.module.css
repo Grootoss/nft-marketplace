@@ -1,0 +1,257 @@
+.rankings {
+  padding: 40px 30px;
+}
+
+.heading {
+  font: inherit;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 140%;
+  margin-bottom: 10px;
+}
+
+.text {
+  font: inherit;
+  color: #858584;
+  margin-bottom: 30px;
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #3b3b3b;
+}
+
+.tab {
+  flex: 1;
+  padding: 19px 0;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  background: transparent;
+  color: #858584;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.tabActive {
+  color: #fff;
+  border-bottom-color: #858584;
+}
+
+.tabLabelTablet {
+  display: none;
+}
+
+.tableHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 12px 20px;
+  margin-bottom: 20px;
+  border: 1px solid #3b3b3b;
+  border-radius: 24px;
+  color: #858584;
+  font-family: 'Space Mono', Arial, sans-serif;
+  font-size: 12px;
+}
+
+.headRank,
+.headArtist,
+.headChange,
+.headSold,
+.headVolume {
+  display: none;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.item {
+  background-color: #3b3b3b;
+  border-radius: 24px;
+}
+
+.link {
+  display: grid;
+  grid-template-columns: 24px 24px 1fr auto;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 20px;
+  color: inherit;
+}
+
+.rank {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background-color: #2b2b2b;
+  color: #858584;
+  font-family: 'Space Mono', Arial, sans-serif;
+  font-size: 12px;
+}
+
+.avatar {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  border-radius: 50%;
+}
+
+.name {
+  min-width: 0;
+  font-family: inherit;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.change,
+.sold {
+  display: none;
+}
+
+.volume {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  text-align: right;
+}
+
+.empty {
+  margin: 40px 0;
+  color: #858584;
+  text-align: center;
+}
+
+@media (width >= 834px) {
+  .rankings {
+    padding: 80px 72px;
+  }
+
+  .heading {
+    font-size: 38px;
+    line-height: 120%;
+  }
+
+  .tab {
+    font-size: 22px;
+  }
+
+  .tabActive {
+    border-bottom-color: #a259ff;
+  }
+
+  .tabLabelMobile {
+    display: none;
+  }
+
+  .tabLabelTablet {
+    display: inline;
+  }
+
+  .tableHead {
+    display: grid;
+    grid-template-columns: 24px 1fr 100px 100px;
+    column-gap: 12px;
+    padding: 12px 20px;
+  }
+
+  .headMobile,
+  .headVolumeMobile {
+    display: none;
+  }
+
+  .headRank,
+  .headArtist,
+  .headChange,
+  .headVolume {
+    display: block;
+  }
+
+  .headChange,
+  .headVolume {
+    text-align: right;
+  }
+
+  .link {
+    grid-template-columns: 24px 24px 1fr 100px 100px;
+  }
+
+  .rank {
+    width: auto;
+    height: auto;
+    border-radius: 0;
+    background-color: transparent;
+  }
+
+  .change {
+    display: block;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 12px;
+    color: #00ac4f;
+    text-align: right;
+  }
+
+  .volume {
+    font-size: 16px;
+  }
+}
+
+@media (width >= 1280px) {
+  .rankings {
+    padding: 80px 115px;
+  }
+
+  .text {
+    font-size: 22px;
+    line-height: 160%;
+  }
+
+  .tableHead {
+    grid-template-columns: 30px 1fr 120px 120px 120px;
+    column-gap: 20px;
+    padding: 12px 30px;
+  }
+
+  .headSold {
+    display: block;
+    text-align: right;
+  }
+
+  .link {
+    grid-template-columns: 30px 24px 1fr 120px 120px 120px;
+    column-gap: 20px;
+    padding: 12px 30px;
+  }
+
+  .rank {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #2b2b2b;
+  }
+
+  .sold {
+    display: block;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: right;
+  }
+
+  .change {
+    font-size: 16px;
+  }
+}

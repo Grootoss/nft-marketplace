@@ -1,5 +1,2 @@
-function Marketplace() {
-  return <h1>Marketplace</h1>;
-}
-
+import Marketplace from '../components/Marketplace/Marketplace';
 export default Marketplace;
