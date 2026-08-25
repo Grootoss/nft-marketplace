@@ -1,11 +1,23 @@
 .header {
+  position: relative;
+  z-index: 100;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
 }
 
+.logo {
+  position: relative;
+  z-index: 2;
+}
+
 .burgerMenu {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 0;
   background: transparent;
   border: none;
@@ -16,13 +28,68 @@
 .nav {
   display: none;
 }
-@media (min-width: 834px) {
+
+.mobileNav {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 80px 30px 40px;
+  background-color: #2b2b2b;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition:
+    opacity 0.2s ease,
+    visibility 0.2s ease;
+}
+
+.mobileNavOpen {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.mobileLink {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 140%;
+  text-decoration: none;
+}
+
+.mobileSignup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 315px;
+  height: 60px;
+  margin-top: 20px;
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: #a259ff;
+  border-radius: 20px;
+}
+
+@media (width >= 834px) {
   .header {
     padding: 20px 72px;
   }
+
+  .mobileSignup {
+    max-width: 250px;
+  }
 }
 
-@media (min-width: 1280px) {
+@media (width >= 1280px) {
   .header {
     padding: 20px 50px;
   }
@@ -56,5 +123,9 @@
     font-weight: 600;
     background-color: #a259ff;
     border-radius: 20px;
+  }
+
+  .mobileNav {
+    display: none;
   }
 }
