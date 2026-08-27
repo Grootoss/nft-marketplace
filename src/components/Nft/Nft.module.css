@@ -2,6 +2,11 @@
   padding-bottom: 40px;
 }
 
+.nft > picture {
+  display: block;
+  background-color: #3b3b3b;
+}
+
 .cover {
   display: block;
   width: 100%;
@@ -212,6 +217,9 @@
 .moreCover {
   display: block;
   width: 100%;
+  aspect-ratio: 330 / 295;
+  object-fit: cover;
+  background-color: #3b3b3b;
   border-radius: 20px 20px 0 0;
 }
 

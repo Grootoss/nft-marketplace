@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import styles from './Nft.module.css';
 import { asset } from '../../utils/asset';
+import FadeImg from '../FadeImg/FadeImg';
 
 const AUCTION_END =
   Date.now() + 59 * 60 * 60 * 1000 + 59 * 60 * 1000 + 59 * 1000;
@@ -23,15 +24,15 @@ function pad(value: number) {
 const tags = ['ANIMATION', 'ILLUSTRATION', 'VIDEO', 'MOON'];
 
 const moreNfts = [
-  { src: 'nft-product-1.jpg', title: 'Foxy Life' },
-  { src: 'nft-product-2.jpg', title: 'Cat From Future' },
-  { src: 'nft-product-3.jpg', title: 'Psycho Dog' },
-  { src: 'nft-product-4.jpg', title: 'Designer Bear' },
-  { src: 'nft-product-5.jpg', title: 'Dancing Robot 0375' },
-  { src: 'nft-product-6.jpg', title: 'Dancing Robot 0356' },
-  { src: 'nft-product-7.jpg', title: 'AstroFiction' },
-  { src: 'nft-product-8.jpg', title: 'Space Travel' },
-  { src: 'nft-product-9.jpg', title: 'Sunset Dimension' },
+  { src: 'nft-product-1.webp', title: 'Foxy Life' },
+  { src: 'nft-product-2.webp', title: 'Cat From Future' },
+  { src: 'nft-product-3.webp', title: 'Psycho Dog' },
+  { src: 'nft-product-4.webp', title: 'Designer Bear' },
+  { src: 'nft-product-5.webp', title: 'Dancing Robot 0375' },
+  { src: 'nft-product-6.webp', title: 'Dancing Robot 0356' },
+  { src: 'nft-product-7.webp', title: 'AstroFiction' },
+  { src: 'nft-product-8.webp', title: 'Space Travel' },
+  { src: 'nft-product-9.webp', title: 'Sunset Dimension' },
 ];
 
 function Nft() {
@@ -51,16 +52,19 @@ function Nft() {
         <picture>
           <source
             media="(min-width: 1280px)"
-            srcSet={asset('/images/nft/nft-desktop-cover.jpg')}
+            srcSet={asset('/images/nft/nft-desktop-cover.webp')}
           />
           <source
             media="(min-width: 834px)"
-            srcSet={asset('/images/nft/nft-tablet-cover.jpg')}
+            srcSet={asset('/images/nft/nft-tablet-cover.webp')}
           />
-          <img
+          <FadeImg
             className={styles.cover}
-            src={asset('/images/nft/nft-mobile-cover.jpg')}
+            src={asset('/images/nft/nft-mobile-cover.webp')}
             alt="The Orbitians"
+            width={375}
+            height={320}
+            fetchPriority="high"
           />
         </picture>
 
@@ -181,10 +185,13 @@ function Nft() {
           {moreNfts.map((item) => (
             <li key={item.src} className={styles.moreCard}>
               <a href="#">
-                <img
+                <FadeImg
                   className={styles.moreCover}
                   src={asset(`/images/nft/${item.src}`)}
                   alt={item.title}
+                  width={330}
+                  height={295}
+                  loading="lazy"
                 />
                 <div className={styles.moreInfo}>
                   <p className={styles.moreTitle}>{item.title}</p>

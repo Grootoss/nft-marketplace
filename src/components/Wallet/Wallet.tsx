@@ -1,5 +1,6 @@
 import styles from './Wallet.module.css';
 import { asset } from '../../utils/asset';
+import FadeImg from '../FadeImg/FadeImg';
 
 const wallets = [
   { src: 'metamask.svg', name: 'Metamask' },
@@ -13,16 +14,19 @@ function Wallet() {
       <picture>
         <source
           media="(min-width: 1280px)"
-          srcSet={asset('/images/wallet-desktop.jpg')}
+          srcSet={asset('/images/wallet-desktop.webp')}
         />
         <source
           media="(min-width: 834px)"
-          srcSet={asset('/images/wallet-tablet.jpg')}
+          srcSet={asset('/images/wallet-tablet.webp')}
         />
-        <img
+        <FadeImg
           className={styles.cover}
-          src={asset('/images/wallet-mobile.jpg')}
+          src={asset('/images/wallet-mobile.webp')}
           alt=""
+          width={375}
+          height={232}
+          fetchPriority="high"
         />
       </picture>
 

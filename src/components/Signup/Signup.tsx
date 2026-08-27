@@ -1,5 +1,6 @@
 import styles from './Signup.module.css';
 import { asset } from '../../utils/asset';
+import FadeImg from '../FadeImg/FadeImg';
 
 function Signup() {
   return (
@@ -7,16 +8,19 @@ function Signup() {
       <picture>
         <source
           media="(min-width: 1280px)"
-          srcSet={asset('/images/signup-desktop.jpg')}
+          srcSet={asset('/images/signup-desktop.webp')}
         />
         <source
           media="(min-width: 834px)"
-          srcSet={asset('/images/signup-tablet.jpg')}
+          srcSet={asset('/images/signup-tablet.webp')}
         />
-        <img
+        <FadeImg
           className={styles.cover}
-          src={asset('/images/signup-mobile.jpg')}
+          src={asset('/images/signup-mobile.webp')}
           alt=""
+          width={375}
+          height={232}
+          fetchPriority="high"
         />
       </picture>
 
