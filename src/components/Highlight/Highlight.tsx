@@ -34,7 +34,7 @@ function Highlight() {
   return (
     <section className={styles.highlight}>
       <a href="#" className={styles.author}>
-        <img src={asset('/images/ava/shroomie-ava.svg')} width={24} height={24} alt="" />
+        <img src={asset('/images/ava/shroomie-ava.webp')} width={24} height={24} alt="" />
         <span>Shroomie</span>
       </a>
 

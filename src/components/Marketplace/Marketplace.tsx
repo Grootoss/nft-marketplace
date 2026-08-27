@@ -59,7 +59,7 @@ function Marketplace() {
 
       {activeTab === 'nfts' ? (
         <ul className={styles.cards}>
-          {nfts.map((item) => (
+          {nfts.map((item, index) => (
             <li key={item.srcMobile} className={styles.card}>
               <a href="#">
                 <picture>
@@ -75,6 +75,12 @@ function Marketplace() {
                     className={styles.cover}
                     src={asset(`/images/products/${item.srcMobile}`)}
                     alt={item.title}
+                    width={330}
+                    height={295}
+                    sizes="(min-width: 1280px) 330px, (min-width: 834px) calc(50vw - 87px), calc(100vw - 60px)"
+                    loading={index < 3 ? 'eager' : 'lazy'}
+                    decoding="async"
+                    fetchPriority={index === 0 ? 'high' : 'auto'}
                   />
                 </picture>
                 <div className={styles.cardInfo}>
@@ -85,6 +91,8 @@ function Marketplace() {
                       width={24}
                       height={24}
                       alt=""
+                      loading="lazy"
+                      decoding="async"
                     />
                     <span>{item.author}</span>
                   </p>

@@ -64,6 +64,8 @@ function Rankings() {
                     width={24}
                     height={24}
                     alt=""
+                    loading={index < 8 ? 'eager' : 'lazy'}
+                    decoding="async"
                   />
                   <span className={styles.name}>{item.name}</span>
                   <span className={styles.change}>{item.change}</span>

@@ -29,10 +29,11 @@ function Promo() {
           <h3 className={styles.title}>Space Walking</h3>
           <p className={styles.author}>
             <img
-              src={asset('/images/ava/animakid-ava.svg')}
-              width="24"
-              height="24px"
+              src={asset('/images/ava/animakid-ava.webp')}
+              width={24}
+              height={24}
               alt=""
+              decoding="async"
             />
             <span>Animakid</span>
           </p>

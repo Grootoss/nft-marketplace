@@ -65,6 +65,9 @@ function Header() {
         <Link className={styles.navLink} to="/rankings">
           Rankings
         </Link>
+        <Link className={styles.navLink} to="/nft">
+          Nft
+        </Link>
         <Link className={styles.navLink} to="/wallet">
           Connect a wallet
         </Link>
@@ -83,6 +86,9 @@ function Header() {
         </Link>
         <Link className={styles.mobileLink} to="/rankings">
           Rankings
+        </Link>
+        <Link className={styles.mobileLink} to="/nft">
+          Nft
         </Link>
         <Link className={styles.mobileLink} to="/wallet">
           Connect a wallet

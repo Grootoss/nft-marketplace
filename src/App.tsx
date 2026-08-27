@@ -5,6 +5,8 @@ import Marketplace from './pages/Marketplace';
 import Rankings from './pages/Rankings';
 import Wallet from './pages/Wallet';
 import Signup from './pages/Signup';
+import Nft from './pages/Nft';
+import Artist from './pages/Artist';
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
         <Route path="/rankings" element={<Rankings />} />
         <Route path="/wallet" element={<Wallet />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/nft" element={<Nft />} />
+        <Route path="/artist/:id" element={<Artist />} />
       </Route>
     </Routes>
   );

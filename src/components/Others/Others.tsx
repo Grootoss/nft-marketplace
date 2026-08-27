@@ -16,7 +16,7 @@ function Others() {
               <div className={styles.body}>
                 <p className={styles.work}>{item.title}</p>
                 <p className={styles.author}>
-                  <img src={asset(`/images/ava/${item.avatar}`)} alt="" />
+                  <img src={asset(`/images/ava/${item.avatar}`)} width={24} height={24} alt="" loading="lazy" decoding="async" />
                   {item.author}
                 </p>
                 <div className={styles.prices}>

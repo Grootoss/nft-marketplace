@@ -47,6 +47,8 @@ function Trending() {
                 width={24}
                 height={24}
                 alt=""
+                loading="lazy"
+                decoding="async"
               />
               <span>{item.author}</span>
             </p>

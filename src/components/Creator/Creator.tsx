@@ -20,6 +20,8 @@ function Creator() {
                 width={60}
                 height={60}
                 alt={creator.alt}
+                loading="lazy"
+                decoding="async"
               />
               <div>
                 <p className={styles.bodyauthor}>{creator.name}</p>

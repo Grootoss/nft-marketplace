@@ -9,13 +9,44 @@
 
 ## Страницы
 
-| Маршрут        | Описание                                                                                    |
-| -------------- | ------------------------------------------------------------------------------------------- |
-| `/`            | Главная: промо, тренды, топ-креаторы, категории, NFT, аукцион, «как это работает», подписка |
-| `/marketplace` | Каталог NFT с поиском, табами NFTs / Collections и сеткой карточек                          |
-| `/rankings`    | Топ-креаторы с периодами Today / This Week / This Month / All Time                          |
-| `/wallet`      | Подключение кошелька                                                                        |
-| `/signup`      | Регистрация аккаунта                                                                        |
+<table>
+  <thead>
+    <tr>
+      <th>Маршрут</th>
+      <th>Описание</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td nowrap><code>/</code></td>
+      <td>Главная: промо, тренды, креаторы, категории, NFT, аукцион, подписка</td>
+    </tr>
+    <tr>
+      <td nowrap><code>/marketplace</code></td>
+      <td>Каталог NFT: поиск, табы NFTs / Collections, сетка карточек</td>
+    </tr>
+    <tr>
+      <td nowrap><code>/rankings</code></td>
+      <td>Рейтинг креаторов: Today / This Week / This Month / All Time</td>
+    </tr>
+    <tr>
+      <td nowrap><code>/wallet</code></td>
+      <td>Подключение кошелька</td>
+    </tr>
+    <tr>
+      <td nowrap><code>/signup</code></td>
+      <td>Регистрация аккаунта</td>
+    </tr>
+    <tr>
+      <td nowrap><code>/nft</code></td>
+      <td>Страница NFT: описание, ставка, таймер, похожие работы</td>
+    </tr>
+    <tr>
+      <td nowrap><code>/artist/:id</code></td>
+      <td>Профиль артиста: статистика, табы Created / Owned / Collection</td>
+    </tr>
+  </tbody>
+</table>
 
 Все экраны сверстаны под **mobile → tablet → desktop** (брейкпоинты `375px`, `834px`, `1280px`).
 
